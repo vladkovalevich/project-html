@@ -1,0 +1,450 @@
+/* ПРАВИЛА:
+1. стили от преподавателя (светятся ярко) нельзя изменять!
+2. стили, отмеченные зеленым цветом (закомментированные) 
+нужно вписать самостоятельно с указанием нужного значения */
+ 
+/* занятие 1 - секция 1 (ХЕДЕР) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ 
+ul {
+    list-style: none;
+}
+ 
+header {
+    height: 100vh;
+    /* добавь сюда свойство background-image */
+    background-image: url(./img/img\ \(1\).png);
+    background-repeat: repeat-x;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+ 
+.site-nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: fixed;
+    top: 30px;
+    background-color: #fff;
+}
+ 
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    /* добавь сюда свойство font-size */
+    /* добавь сюда свойство color */
+    color:mediumturquoise;
+    font-size:25px;
+}
+ 
+.nav-list {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+ 
+.nav-link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #7e7c7e;
+    transition: .6s;
+    position: relative;
+    padding: 5px;
+}
+ 
+.nav-link:hover {
+    color: #303030;
+    font-size: 16px;
+}
+ 
+.nav-link:hover::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #1ab798;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+ 
+.main-title {
+    padding-top: 300px;
+    /* добавь сюда свойство font-size */
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    /* добавь сюда свойство margin-bottom */
+    margin-bottom:65px;
+    font-size: 100px;
+    color: white;
+}
+ 
+.intro {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 21px;
+}
+ /* занятие 2 - секция 2 */
+.section-header {
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #1ab798;
+    padding-top: 60px;
+    margin-bottom: 32px;
+}
+ 
+.section-header::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: #babdc1;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+ 
+.section-header::after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: #babdc1;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+ 
+.features-item::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    left: -50px;
+    top: 30px;
+    padding-right: 30px;
+}
+ 
+.features-item:nth-of-type(1)::before {
+    /* добавь сюда иконку через свойство background-image */
+    background-image: url(./img/iconboard.png);
+}
+ 
+.features-item:nth-of-type(2)::before {
+    /* добавь сюда иконку через свойство background-image */
+    background-image: url(./img/iconshare.png);
+}
+ 
+.features-item:nth-of-type(3)::before {
+    /* добавь сюда иконку через свойство background-image */
+    background-image: url(./img/icondevicehub.png);
+}
+ 
+.features-item:nth-of-type(4)::before {
+    /* добавь сюда иконку через свойство background-image */
+    background-image: url(./img/iconnotification.png);
+}
+ 
+.features-item:nth-of-type(5)::before {
+    /* добавь сюда иконку через свойство background-image */
+    background-image: url(./img/iconthumbup.png);
+}
+ 
+.features-item:nth-of-type(6)::before {
+    /* добавь сюда иконку через свойство background-image */
+    background-image: url(./img/iconstar.png)
+}
+ 
+.features-item-header {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+ 
+.features-item-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+ 
+.features-intro-text {
+    width: 90%;
+    margin: 0 auto;
+    /* добавь сюда свойство margin-bottom */
+    margin-bottom: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom:65px
+}
+ 
+.features-list {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.features-item {
+    width: 300px;
+    /* добавь сюда свойство margin-bottom */
+    margin-bottom: 18px ;
+}
+/* занятие 4 - секция 3 */
+.video-section {
+    /* добавь сюда свойство background-color */
+    background-color:deepskyblue
+}
+ 
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 93%;
+}
+ 
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 450px;
+    justify-content: space-around;
+}
+ 
+.video-tittle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    line-height: 18px;
+    text-align: left;
+    padding-top: 85px;
+    text-transform: uppercase;
+}
+ 
+ 
+ 
+ 
+.video-intro {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    /* добавь сюда свойство color, чтобы оно сочеталось с твоим фоном секции */
+    width: 1603px;
+    height: 447px;
+    color: mintcream;
+    /* добавь сюда свойство font-size */
+    font-size: 16px;
+    line-height: 26px;
+    /* добавь сюда свойство border для выделения текста рамкой (на свой вкус) */
+    /* добавь сюда свойство padding, чтобы равномерно оттолкнуть текст от границ */
+    padding: 50px;
+ 
+}
+ 
+/* занятие 4 - секция 4 */
+.ceo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.ceo {
+    width: 100px;
+    /* добавь сюда свойство margin-bottom */
+    margin-bottom: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: auto;
+}
+ 
+.ceo-photo {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    border-radius: 56%;
+    /* добавь сюда свойство border-radius  для округления фото */
+ }
+ 
+.ceo-name {
+    text-align: center;
+    font-weight: 600;
+}
+ 
+.ceo-info {
+    text-align: center;
+    font-size: 13px;
+    color: #b5b5b5;
+}
+ 
+.ceo-quote {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 50px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 36px;
+    color: #282528;
+}
+ 
+.ceo-quote::before {
+    content: '“';
+    /* добавь сюда свойство width */
+   
+    /* добавь сюда свойство height */
+    
+    font-family: 'Source Sans Pro', sans-serif;
+    /* добавь сюда свойство font-size */
+ 
+    position: absolute;
+    top: 20px;
+    left: -45px;
+    color: #babdc175;
+}
+ /* занятие 5 - секция 5 */
+.team-intro {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    /* добавь сюда свойство text-align */
+   
+    margin-bottom: 35px;
+  }
+   
+  .team-list {
+    width: 92%;
+    /* добавь сюда свойство margin для центрирования контента*/
+   
+  }
+   
+  .team-member {
+    position: relative;
+    width: 270px;
+  }
+   
+  .member-name {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    /* добавь сюда свойство text-align */
+    
+    transition: 0.6s;
+  }
+   
+  .member-position {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    /* добавь сюда свойство text-align */
+   
+  }
+   
+  .member-photo {
+    width: 270px;
+    height: auto;
+    display: block;
+    /* добавь сюда свойство margin для центрирования контента*/
+   
+  }
+   
+  .overflow {
+    width: 270px;
+    height: 300px;
+    overflow: hidden;
+  }
+   
+  .hover-box {
+    display: none;
+    width: 270px;
+    height: 300px;
+    /* добавь сюда свойство background-color в соответствии с дизайном твоего проекта*/
+   
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.6s;
+    z-index: 1;
+  }
+   
+  .team-member:hover .hover-box {
+    display: block;
+    /* измени цвет в свойстве box-shadow в соответствии с дизайном твоего проекта*/
+    box-shadow: 0px 0px 17px #1ab798;
+  }
+   
+  .team-member:hover .member-name {
+    color: #1ab798;
+    font-size: 24px;
+  }
+   
+  .quote {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40%;
+  }
+   
+  .social-links {
+    display: flex;
+    justify-content: center;
+  }
+   
+  .member-social-link {
+    display: inline-block;
+    width: 43px;
+    height: 42px;
+    margin: 4px;
+    background-color: #4b4b4bab;
+    background-image: url(./img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 5px;
+  }
+   
+  .member-social-link:nth-of-type(2) {
+    background-image: url(./img/linkedin.png);
+  }
+   
+  .member-social-link:nth-of-type(3) {
+    background-image: url(./img/twitter.png);
+  }
+   
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 80px;
+    padding: 0;
+  }
+  
+
+
+ 
+
